@@ -5,9 +5,9 @@ class DifferentCurrencyError(Exception):
     pass
 
 
-class Currency:
+class Currency:()
     """
-    Represents a currency. Does not contain any exchange rate info.
+    "Represents a currency.Does not contain any exchange rate info."
     """
 
     def __init__(self, name, code, symbol=None, digits=2):
@@ -18,7 +18,10 @@ class Currency:
         - symbol - optional symbol used to designate currency
         - digits -- number of significant digits used
         """
-        pass
+        self.name = name 
+        self.code = code
+        self.symbol = None
+        self.digits = 2
 
     def __str__(self):
         """
